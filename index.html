@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+
+
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">        
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+ 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+
+
+
+    <div id="shelf" class="icon-col">
+    	<div class="row">
+			<img src="http://field.learningequality.org:8008/static/images/distributed/horizontal-logo-small.png" class="text-center"/>
+    	</div>
+        <br>
+    	<br>
+    	<div class="icon-container">
+    		<i class="fa icon fa-play-circle-o fa-3x green text-center"><span class="white hidden">Introduction to Economics</span></i>	    		
+    	</div>
+
+    	<div class="icon-container">
+			<i class="fa icon fa-pencil-square-o fa-3x green"><span class="white hidden">Unit 1 Quiz</span></i>
+    	</div>
+
+    	<div class="icon-container">
+    		<i class="fa icon fa-play-circle-o fa-3x green text-center"><span class="white hidden">Parsing gross domestic product</span></i>	    		
+    	</div>
+    	<div class="icon-container">
+    		<i class="fa icon fa-play-circle-o fa-3x green text-center"><span class="white hidden">Investment Consumption</span></i>	    		
+    	</div>
+    	<div class="icon-container">
+			<i class="fa icon fa-pencil-square-o fa-3x green"><span class="white hidden">Unit 2 Quiz</span></i>
+    	</div>	    	
+    	<div class="icon-container">
+    		<i class="fa icon fa-play-circle-o fa-3x green text-center"><span class="white hidden">Accounting</span></i>	    		
+    	</div>	    		    		    	
+    	<div class="icon-container">
+    		<i class="fa icon fa-play-circle-o fa-3x green text-center"><span class="white hidden">Real GDP and nominal GDP</span></i>	    		
+    	</div>
+    	<div class="icon-container">
+    		<i class="fa icon fa-play-circle-o fa-3x green text-center"><span class="white hidden">HELLO</span></i>	    		
+    	</div>
+    	<div class="icon-container">
+			<i class="fa icon fa-pencil-square-o fa-3x green"><span class="white hidden">GDP deflator</span></i>
+    	</div>
+    	<div class="icon-container">
+			<i class="fa icon fa-pencil-square-o fa-3x green"><span class="white hidden">HELLO</span></i>
+    	</div>
+    	<div class="icon-container" id="slideout">
+			<i class="fa icon-back fa-arrow-circle-o-left fa-3x gray"></i>
+    	</div>	    		    		    	
+    </div>
+
+<div class="row">
+    <div class="container">
+        <h1 class="pull-right mobile-size">Abhi Aiyer 35 points <i class="fa fa-star"></i></h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-md-8 col-sm-8 col-xs-8">
+        <div class="vendor"><iframe src="//www.youtube.com/embed/9T3AAn-Cw3g" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+    </div>
+    <div class="col-xs-2"></div>
+</div>
+
+
+</div>
+
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+        <script>
+        (function(){
+     
+               // Show sidebar
+    function showSidebar(){
+        $('#shelf').addClass('long-shelf');
+        $('i span').removeClass('hidden');
+    }
+
+    // Hide sidebar
+    function hideSidebar(){
+        $('#shelf').removeClass('long-shelf');
+        $('i span').addClass('hidden');
+    }
+
+ 
+    // Toggle sidebar
+    $('#slideout').click(function(){
+        if ( $('#shelf').hasClass('long-shelf') ){
+            hideSidebar();
+        }
+        else {
+            showSidebar();
+        }
+    });
+ 
+})();
+        </script>
+    </body>
+</html>
